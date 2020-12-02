@@ -1,4 +1,5 @@
 from aocd import data, submit
+from functools import reduce
 
 day = 2
 
@@ -48,3 +49,43 @@ def part_b():
 #    submit_b(valid)
 
 part_b()
+
+def alternate_solution():
+    def sol_a(x):
+        pas, key, lo, hi = x
+        count = pas.count(key)
+        if count >= lo and count <= hi:
+            return 1
+        return 0
+
+    def sol_b(x):
+        pas, key, lo, hi = x
+        if (pas[lo-1] == key) != (pas[hi-1] == key):
+            return 1
+        return 0
+
+    def sol_combined(x):
+        return (sol_a(x), sol_b(x))
+
+    def reduce_combined(x, y):
+        return (x[0] + y[0], x[1] + y[1])
+
+    def val_processing(x):
+
+        rule, pas = x.split(": ")
+        bounds, key = rule.split(" ")
+        lo, hi = bounds.split("-")
+
+        return (pas, key, int(lo), int(hi))
+
+
+    processed_data_a = map(val_processing, data.split("\n"))
+    valid_a,valid_b = reduce(reduce_combined, map(sol_combined, processed_data_a))
+
+    print(valid_a)
+#    submit_a(valid_a)
+
+    print(valid_b)
+#    submit(valid_b)
+
+alternate_solution()
