@@ -54,15 +54,10 @@ part_b()
 # Alternate solutions to both parts that only goes through the puzzel input once
 def alternate_solution():
     def sol_a(pas, key, lo, hi):
-        count = pas.count(key)
-        if count >= lo and count <= hi:
-            return 1
-        return 0
+        return int(lo <= pas.count(key) <= hi)
 
     def sol_b(pas, key, lo, hi):
-        if (pas[lo-1] == key) != (pas[hi-1] == key):
-            return 1
-        return 0
+        return int((pas[lo-1] == key) != (pas[hi-1] == key))
 
     def sol_combined(x):
         return (sol_a(*x), sol_b(*x))
@@ -79,8 +74,8 @@ def alternate_solution():
         return (pas, key, int(lo), int(hi))
 
 
-    processed_data_a = map(val_processing, data.split("\n"))
-    valid_a,valid_b = reduce(reduce_combined, map(sol_combined, processed_data_a))
+    processed_data = map(val_processing, data.split("\n"))
+    valid_a,valid_b = reduce(reduce_combined, map(sol_combined, processed_data))
 
     print(valid_a)
 #    submit_a(valid_a)
