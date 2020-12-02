@@ -31,8 +31,6 @@ def alternate_part_a(d):
     # sort the list
     d.sort()
 
-    remainder = d[0]
-
     upper = len(d)-1
     lower = 0
 
