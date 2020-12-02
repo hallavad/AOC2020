@@ -50,22 +50,22 @@ def part_b():
 
 part_b()
 
+
+# Alternate solutions to both parts that only goes through the puzzel input once
 def alternate_solution():
-    def sol_a(x):
-        pas, key, lo, hi = x
+    def sol_a(pas, key, lo, hi):
         count = pas.count(key)
         if count >= lo and count <= hi:
             return 1
         return 0
 
-    def sol_b(x):
-        pas, key, lo, hi = x
+    def sol_b(pas, key, lo, hi):
         if (pas[lo-1] == key) != (pas[hi-1] == key):
             return 1
         return 0
 
     def sol_combined(x):
-        return (sol_a(x), sol_b(x))
+        return (sol_a(*x), sol_b(*x))
 
     def reduce_combined(x, y):
         return (x[0] + y[0], x[1] + y[1])
