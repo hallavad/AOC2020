@@ -16,9 +16,7 @@ def submit_b(res):
 def process_data():
 
     # changed to using list comprehension instead of map for better readability
-    data_list = [[x == '#' for x in d ] for d in data.split("\n")]
-
-    return data_list
+    return [[x == '#' for x in d ] for d in data.split("\n")]
 
 def check_slope(d, xdiff,ydiff):
     width = len(d[0])
