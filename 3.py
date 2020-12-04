@@ -16,20 +16,15 @@ def submit_b(res):
 def process_data():
 
     # changed to using list comprehension instead of map for better readability
-    data_list = [[x == '#' for x in d ] for d in data.split("\n")]
+    return [[x == '#' for x in d ] for d in data.split("\n")]
 
-    return data_list
-
-def check_slope(d, xdiff,ydiff):
+def check_slope(d, xdiff, ydiff):
     width = len(d[0])
 
     trees = 0
-    x = 0
-    y = 0
+    y,x = 0,0
     while y < len(d):
-        if d[y][x]:
-            trees += 1
-
+        trees += d[y][x]
         x = (xdiff + x) % width
         y += ydiff
 
@@ -37,13 +32,16 @@ def check_slope(d, xdiff,ydiff):
 
 def part_a():
     res = check_slope(process_data(), 3, 1)
+    
     print(res)
     #submit_a(res)
 
 def part_b():
     d = process_data()
 
-    res = check_slope(d, 1, 1) * check_slope(d, 3, 1) * check_slope(d, 5, 1) * check_slope(d, 7, 1) * check_slope(d, 1, 2)
+    res = 1
+    for diff in [(1,1),(3,1),(5,1),(7,1),(1,2)]:
+        res *= check_slope(d, *diff)
 
     print(res)
     #submit_b(res)
