@@ -20,7 +20,7 @@ def process_data():
     def line_func(line):
         return int(''.join(list(map(lambda c: str(int(c in 'BR')), line))), 2)
 
-    return [line_func(d) for d in data.split('\n')]
+    return {line_func(d) for d in data.split('\n')}
 
 
 def part_a():
@@ -36,8 +36,8 @@ part_a()
 
 
 def part_b():
-    d = process_data()
-    passports = set(d)
+    passports = process_data()
+    passports = d
     for seat in passports:
         if seat+1 not in passports and seat+2 in passports:
             print(seat+1)
