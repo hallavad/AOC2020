@@ -18,3 +18,6 @@ Part b was suprisingly easy and didn't add any real complexity to the problem, j
 
 ## Day 4
 Hardest puzzle as of yet. Once a again a lot of parsing of the initial input. Once the parsing was done it was just a matter of checking if the correct fields existed in a. In b a bit more tinkering was needed to both make sure that the fields existed and that they had certain values. Overall I'm happy that I managed to do it without a lot of if statements and instead made use of a dictionary containing a function. I might tinker a bit and see if i can get it to use iterator instead of looping through each passport. That would require me to change the structure somewhat and get rid of the assignment to `valid_fields`.
+
+## Day 5
+As with the other puzzles the key is in analyzing the data and parsing it in the right way. By realizing that the input is just a binary number where ones are replaced with B or R and zeroes replaced with F or L the algorithm becomes trivial. in A it's just about finding the highest number parsed. In B you need to find the missing number.
