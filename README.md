@@ -21,3 +21,6 @@ Hardest puzzle as of yet. Once a again a lot of parsing of the initial input. On
 
 ## Day 5
 As with the other puzzles the key is in analyzing the data and parsing it in the right way. By realizing that the input is just a binary number where ones are replaced with B or R and zeroes replaced with F or L the algorithm becomes trivial. in A it's just about finding the highest number parsed. In B you need to find the missing number.
+
+## Day 6
+Today was a fun puzzle. Unfortunately i didn't see a good way to process the data for both the parts the way i usually do, the parsing in common is only by spliting up the groups. I could've created sets for all people in there as i do in part B but since the solution part A merges all peoples answers on to one line and then creating the set it seemed unnecessary to parse each one of them into a set and then merging them.
