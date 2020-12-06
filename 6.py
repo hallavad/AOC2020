@@ -15,7 +15,7 @@ def submit_b(res):
 # Process the input data into a list
 def process_data():
 
-    return [[set(person) for person in group.split('\n') for group in data.split("\n\n")]
+    return [group for group in data.split("\n\n")]
 
 
 def part_a():
