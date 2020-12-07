@@ -24,3 +24,6 @@ As with the other puzzles the key is in analyzing the data and parsing it in the
 
 ## Day 6
 Today was a fun puzzle. Unfortunately i didn't see a good way to process the data for both the parts the way i usually do, the parsing in common is only by spliting up the groups. I could've created sets for all people in there as i do in part B but since the solution part A merges all peoples answers on to one line and then creating the set it seemed unnecessary to parse each one of them into a set and then merging them.
+
+## Day 7
+Trickiest yet. Parsing the data in to the needed values weren't that hard. However I read the question a bit fast at first so had to do a new seperate data_processing function when i realized that. The first fucntion came in to good use for part B when i needed to go through the baggage outer to inner instead of inner to outer as in part A. I'm not quite happy with my datastructure probably going to go back to it and see if i can create something different that works for both a and b simultaneously.
