@@ -14,8 +14,8 @@ def submit_b(res):
     submit(res, part="b", day=day, year=2020)
 
 
-# Process the input data into a list
-def process_data():
+# hashmap with the outer bags as keys
+def process_data_outer():
     def val_func(out_bag):
         out_color, other = out_bag.split(' bags contain ')
 
@@ -30,7 +30,8 @@ def process_data():
     return {val[0]: val[1] for val in [val_func(out_bag) for out_bag in data.split('\n')]}
 
 
-def process_data2():
+# hashmap with inner bags as keys
+def process_data_inner():
     rules = data.split('\n')
 
     parsed_rules = {}
@@ -50,7 +51,7 @@ def process_data2():
 
 
 def part_a():
-    d = process_data2()
+    d = process_data_inner()
 
     def inside_of(color):
         if color in d:
@@ -71,7 +72,7 @@ part_a()
 
 
 def part_b():
-    d = process_data()
+    d = process_data_outer()
 
     def count_bags(color):
         if color in d:
