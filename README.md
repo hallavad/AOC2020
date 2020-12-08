@@ -27,3 +27,6 @@ Today was a fun puzzle. Unfortunately i didn't see a good way to process the dat
 
 ## Day 7
 Trickiest yet. Parsing the data in to the needed values weren't that hard. However I read the question a bit fast at first so had to do a new seperate data_processing function when i realized that. The first fucntion came in to good use for part B when i needed to go through the baggage outer to inner instead of inner to outer as in part A. I'm not quite happy with my datastructure probably going to go back to it and see if i can create something different that works for both a and b simultaneously.
+
+## Day 8
+Created a couple classes to give a better representation and cleaner code. Overall a fun day, not to complex, but still a fun challenge.
