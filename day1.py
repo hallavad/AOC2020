@@ -27,21 +27,20 @@ def part_a(d):
                 print(d[i]*d[j])
                 submit_a(d[i]*d[j])
 
-def alternate_part_a(d):
+def sum_2_numbers(numbers, sum):
     # sort the list
-    d.sort()
+    numbers.sort()
 
-    upper = len(d)-1
+    upper = len(numbers)-1
     lower = 0
 
     while upper > lower:
         # raise lower bound
-        while d[lower]+d[upper] < 2020:
+        while numbers[lower]+numbers[upper] < sum:
             lower += 1
 
-        if d[lower]+d[upper] == 2020:
-            submit_a(d[lower]*d[upper])
-            print(d[lower]*d[upper])
+        if numbers[lower]+numbers[upper] == sum:
+#            submit_a(numbers[lower]*numbers[upper])
             return True
 
         upper -= 1

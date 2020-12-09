@@ -30,3 +30,6 @@ Trickiest yet. Parsing the data in to the needed values weren't that hard. Howev
 
 ## Day 8
 Created a couple classes to give a better representation and cleaner code. Overall a fun day, not to complex, but still a fun challenge.
+
+## Day 9
+Fun puzle to solve, made use of the solution from day 1 to solve part A, didn't help me in part B however. Not quite happy with the structure of the solution for B. I'm certain i could make it better, if only I hade the time to do it...
