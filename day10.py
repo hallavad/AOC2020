@@ -55,8 +55,7 @@ def part_b():
     x = [[0]]
     x_i = 0
     curr_jolts = 0
-    for i, adapter in enumerate(d):
-
+    for adapter in d:
         diff = adapter - curr_jolts
 
         if diff == 1:
