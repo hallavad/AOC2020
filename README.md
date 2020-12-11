@@ -36,3 +36,6 @@ Fun puzle to solve, made use of the solution from day 1 to solve part A, didn't 
 
 ## Day 10
 Happy about today solution, figuring out an efficient way of counting the number of choices in part b was fun and a bit challenging. Unfortunately I had an error in my initial algoritm for it and had to sit for quite a while trying to find out why I didn't get the right answer.
+
+## Day 11
+A bit of a challenge. Not quite happy with my solution today, would have rather solved it with networkx and a graph connecting all seats. Unfortunately pip didn't agree with me so the package didn't want to install itself. I will probably get back to this day and do a solution with a graph later.
