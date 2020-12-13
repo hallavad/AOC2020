@@ -39,3 +39,6 @@ Happy about today solution, figuring out an efficient way of counting the number
 
 ## Day 11
 A bit of a challenge. Not quite happy with my solution today, would have rather solved it with networkx and a graph connecting all seats. Unfortunately pip didn't agree with me so the package didn't want to install itself. I will probably get back to this day and do a solution with a graph later.
+
+## Day 12
+Didn't have time to complete it on the day but it was a fun puzzle to solve. A quick brainteaser to then move on to day 13
