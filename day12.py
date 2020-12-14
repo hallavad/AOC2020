@@ -65,18 +65,15 @@ class Ship:
         elif instr == 'L':
             facing = (dist/90) % 4
             while facing > 0:
-                temp = self.w_east
-                self.w_east = -self.w_north
-                self.w_north = temp
+                self.w_north, self.w_east = (self.w_east, -self.w_north)
                 facing -= 1
 
         elif instr == 'R':
             facing = (dist/90) % 4
             while facing > 0:
-                temp = self.w_north
-                self.w_north = -self.w_east
-                self.w_east = temp
+                self.w_north, self.w_east = (-self.w_east, self.w_north)
                 facing -= 1
+
         elif instr == 'F':
             self.north += self.w_north * dist
             self.east += self.w_east * dist
