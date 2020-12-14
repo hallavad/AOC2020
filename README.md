@@ -42,3 +42,6 @@ A bit of a challenge. Not quite happy with my solution today, would have rather 
 
 ## Day 12
 Didn't have time to complete it on the day but it was a fun puzzle to solve. A quick brainteaser to then move on to day 13
+
+## Day 13
+Part A was easy but part B took a while to figure out. Quite a bit of googleing was involved until i hade (re)understood the chinese remainder theorem and implemented it in my code. The resulting code however is quite efficient which i'm happy with.
