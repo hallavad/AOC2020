@@ -45,3 +45,8 @@ Didn't have time to complete it on the day but it was a fun puzzle to solve. A q
 
 ## Day 13
 Part A was easy but part B took a while to figure out. Quite a bit of googleing was involved until i hade (re)understood the chinese remainder theorem and implemented it in my code. The resulting code however is quite efficient which i'm happy with.
+
+## Day 15
+Figured out a good algorithm to use for todays puzzle immediately but had made a simple mistake in my data_processing, not turning the last number in to an int. I had written `d[-1]` instead of `int(d[-1])`. This resulted in my last input which was a 13 to not be handled properly. It also took quite a while to find the error since all the examples worked correctly, since i both manually antered them as ints and not strings.
+
+Part B was however very simple since it just needed me to find a later number in the series and my code was efficient enough to do it without any changes.
