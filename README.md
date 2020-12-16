@@ -50,3 +50,6 @@ Part A was easy but part B took a while to figure out. Quite a bit of googleing 
 Figured out a good algorithm to use for todays puzzle immediately but had made a simple mistake in my data_processing, not turning the last number in to an int. I had written `d[-1]` instead of `int(d[-1])`. This resulted in my last input which was a 13 to not be handled properly. It also took quite a while to find the error since all the examples worked correctly, since i both manually antered them as ints and not strings.
 
 Part B was however very simple since it just needed me to find a later number in the series and my code was efficient enough to do it without any changes.
+
+## Day 16
+  A fun puzzle. Had to do a different processing of the initial input than usual which was a nice change of pace. For the algorithm part it wasn't that big of a challenge. Something I have realized during the later puzzles is that it could help me do them faster if i clearly define the datastructures involved and put my algorithm down on paper first. To be clear I haven't done that yet but I have the feeling it will help work out some bugs and structure the code better from the start. Might try it tomorrow.
